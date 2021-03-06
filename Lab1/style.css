@@ -1,0 +1,101 @@
+header, nav, main, footer {
+    display: block;
+    width: 1078px;
+}
+
+body {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    width: 1078px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+header {
+    background-color: blue;
+    height: 300px;
+    position: relative;
+}
+
+nav {
+    color: black;
+    background-color: white;
+    height: 100px;
+}
+
+main {
+    background-color: blue;
+    height: auto;
+    overflow: hidden;
+}
+
+#col-left {
+    background-color: rgb(56, 56, 56);
+    width: 200px;
+    height: 500px;
+    float: left;
+    padding-top: 30px;
+}
+
+#col-center {
+    background-color:  rgb(122, 122, 122);
+    width: auto;
+    height: 500px;
+    padding-top: 30px;
+}
+
+table {
+    width: 800px;
+    height: 100px;
+    color: black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+#lp {
+    width: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #bdb8ff;
+}
+
+th {
+    background-color: rgb(163, 163, 163)
+}
+
+footer {
+    color: black;
+    background-color: white;
+    height: 30px;
+    clear: both;
+}
+
+#logo img {
+    position: absolute;
+    top: 10px; left: 50px;
+    width: auto;
+    height: auto;
+    border: 2px dotted white;
+    max-height: 200px;
+    max-width: 200px;
+}
+
