@@ -11,26 +11,26 @@
 <body>
     <div class="container">
         <legend>Formularz kontaktowy</legend>
-        <form action="index.html" method="post" onsubmit="return checkForm();">
-          <div class="form-group">
+        <form action="index.html" method="post" onsubmit="return(checkForm());">
+          <div class="form-group" id="borderFname">
             <label for="fname">Imię:</label>
-            <input type="text" class="form-control" id="fname" placeholder="Wpisz imię" name="fname">
+            <input type="text" class="form-control" id="fname" placeholder="Wpisz imię" name="fname" onblur="onblurFname()" onchange="onchangeFname()">
             <p id="errorFname" class="hide">Podanie imienia jest wymagane!</p>
           </div>
-          <div class="form-group">
+          <div class="form-group" id="borderLname">
             <label for="lname">Nazwisko:</label>
-            <input type="text" class="form-control" id="lname" placeholder="Wpisz nazwisko" name="lname">
+            <input type="text" class="form-control" id="lname" placeholder="Wpisz nazwisko" name="lname" onblur="onblurLname()" onchange="onchangeLname()">
             <p id="errorLname" class="hide">Podanie nazwiska jest wymagane!</p>
           </div>
-          <div class="form-group">
+          <div class="form-group" id="borderEmail">
             <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email" placeholder="Wpisz adres email" name="email">
+            <input type="text" class="form-control" id="email" placeholder="Wpisz adres email" name="email" onblur="onblurEmail()" onchange="onchangeEmail()">
             <p id="errorEmail" class="hide">Podanie emaila jest wymagane!</p>
             <p id="errorEmail2" class="hide">Niepoprawny email!</p>
           </div>
-          <div class="form-group">
+          <div class="form-group" id="borderInfo">
             <label for="info">Treść (250 znaków):</label>
-            <input type="text" class="form-control" id="info" placeholder="Wpisz treść" name="info">
+            <input type="text" class="form-control" id="info" placeholder="Wpisz treść" name="info" maxlength="250" onblur="onblurInfo()" onchange="onchangeInfo()">
             <p id="errorInfo" class="hide">Podanie treści jest wymagane!</p>
           </div>
           <input type="submit" value="Wyślij">
