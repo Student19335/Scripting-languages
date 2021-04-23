@@ -1,19 +1,42 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jQuery UI Datepicker - Default functionality</title>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    $( function() {
-        $( "#datepicker" ).datepicker();
-    });
-</script>
-</head>
-<body>
-    <p>Data: <input type="text" id="datepicker"></p>
-</body>
+<html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        });
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        });
+        $( function() {
+            $( "#dialog" ).dialog();
+        });
+    </script>
+    </head>
+    <body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Text</a></li>
+                <li><a href="#tabs-2">Data picker</a></li>
+                <li><a href="#tabs-3">Dialog</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Text-Text-Text</p>
+            </div>
+            <div id="tabs-2">
+                <p>Date: <input type="text" id="datepicker"></p>
+            </div>
+            <div id="tabs-3">
+                <div id="dialog">
+                    <p>Text, text, text...</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
