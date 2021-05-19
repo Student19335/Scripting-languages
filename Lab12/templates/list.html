@@ -1,0 +1,25 @@
+{% extends "content.html" %}
+
+<!-- title -->
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+<!-- content (without nav) -->
+{% block content %}
+  <table>
+      <tr>
+          <th>Imię i nazwisko</th>
+          <th>Numer pracownika</th>
+          <th>Adres</th>
+      </tr>
+      {% for row in rows %}
+        <tr>
+            <td>{{row["fullname"]}}</td>
+            <td>{{row["number"]}}</td>
+            <td>{{row["address"]}}</td>
+        </tr>
+      {% endfor %}
+  </table>
+{% endblock %}
