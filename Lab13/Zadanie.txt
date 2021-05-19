@@ -1,0 +1,1 @@
+Przeanalizuj przykłady z wykładu. Dodaj obsługę formularza do aplikacji.

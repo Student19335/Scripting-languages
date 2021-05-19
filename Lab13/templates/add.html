@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+<!-- title -->
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+<!-- content (without nav) -->
+{% block content %}
+<form action="{{ url_for('add') }}" method="POST">
+    <div class="form-group">
+        <label for="fullname">Imię i nazwisko</label>
+        <input type="text" class="form-control" name="fullname">
+    </div>
+    <div class="form-group">
+        <label for="number">Numer pracownika</label>
+        <input type="text" class="form-control" name="number">
+    </div>
+    <div class="form-group">
+        <label for="address">Adres</label>
+        <input type="text" class="form-control" name="address">
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+  </form>
+  <h1 id="result">{{msg}}</h1>
+{% endblock %}
