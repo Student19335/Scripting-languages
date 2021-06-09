@@ -1,2 +1,0 @@
-Zadanie: Przeanalizuj przykłady z wykładu. Dodaj panel logowania do aplikacji.
-(tak samo wygląda jak poprzednie, bo w poprzednim to wykonałem)
