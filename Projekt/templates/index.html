@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <img src="{{url_for('static', filename='img/flask.png')}}" class="img-fluid logo1" alt="Responsive image">
+        <div class="container mt-3 text-center w-25">
+            <h3>Before you join...</h3>
+            <form id="welcome-form" action="/chat" onsubmit="return(checkForm());">
+                <div class="input-group mt-3 pb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">Enter your name</label>
+                    </div>
+                    <input id="nickname" type="text" class="form-control welcome-input" placeholder="" name="nickname">
+                </div>
+                <p id="nickname-error" class="hide error"></p>
+                <div class="input-group pb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">Enter your age</label>
+                    </div>
+                    <input id="age" type="text" class="form-control welcome-input" placeholder="" name="age">
+                </div>
+                <p id="age-error" class="hide error"></p>
+                <div class="input-group pb-3">
+                    <div class="input-group-prepend">
+                    <label class="input-group-text" for="sexSelect">Choose your sex</label>
+                    </div>
+                    <select id="sex" class="custom-select welcome-input" id="sexSelect" name="sex">
+                    <option class="welcome-input" selected>Choose...</option>
+                    <option class="welcome-input" value="male">Male</option>
+                    <option class="welcome-input" value="female">Female</option>
+                    </select>
+                </div>
+                <p id="sex-error" class="hide error"></p>
+                <div class="input-group"></div>
+                    <button type="submit" class="btn btn-outline-warning">Join a chat!</button>
+                </div>
+            </form>
+        </div>
+{% endblock %}

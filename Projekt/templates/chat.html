@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <img src="{{url_for('static', filename='img/flask.png')}}" class="img-fluid logo2" alt="Responsive image">
+        <audio src="{{url_for('static', filename='mp3/notification.mp3')}}" id="audio" controls style="display: none;"></audio>
+        <div class="random">
+            <button id="rand-btn" type="button" class="btn btn-outline-warning btn-lg">Random (ESC)</button>
+        </div>
+        <div class="online-wrapper">
+            <label class="online-text">Online: </label>
+            <label class="online-number"></label>
+        </div>
+        <div class="stranger-info">
+            <p id="stranger-title">You're speaking with</p>
+            <div class="stranger-wrapper">
+                <p id="stranger-name">No body</p>
+                <p id="stranger-age"></p>
+                <p id="stranger-sex"></p>
+            </div>
+        </div>
+        <div class="container mt-3 text-center">
+            <div id="chat-main">
+                <div id="chat-messages">
+                    
+                </div>
+                    
+                <div id="chat-input">
+                    <textarea id="input-text" placeholder="Your message..."></textarea>
+                    <button id="input-btn" type="button" class="btn btn-outline-warning btn-lg btn-send">Send!</button>
+                </div>
+            </div>
+        </div>
+{% endblock %}
